@@ -31,6 +31,11 @@
     return [self waitForViewWithAccessibilityLabel:label value:nil traits:UIAccessibilityTraitNone tappable:NO];
 }
 
+- (UIView *)waitForWebViewWithAccessibilityLabel:(NSString *)label
+{
+    return nil;
+}
+
 - (UIView *)waitForViewWithAccessibilityLabel:(NSString *)label traits:(UIAccessibilityTraits)traits
 {
     return [self waitForViewWithAccessibilityLabel:label value:nil traits:traits tappable:NO];
@@ -126,6 +131,11 @@
 - (void)tapViewWithAccessibilityLabel:(NSString *)label
 {
     [self tapViewWithAccessibilityLabel:label value:nil traits:UIAccessibilityTraitNone];
+}
+
+- (void)tapWebViewWithAccessibilityLabel:(NSString *)label
+{
+    
 }
 
 - (void)tapViewWithAccessibilityLabel:(NSString *)label traits:(UIAccessibilityTraits)traits

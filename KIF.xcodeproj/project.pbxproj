@@ -12,6 +12,13 @@
 		2EE12710198991920031D347 /* MultiFingerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1270F198991920031D347 /* MultiFingerTests.m */; };
 		2EE12711198991920031D347 /* MultiFingerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1270F198991920031D347 /* MultiFingerTests.m */; };
 		4A48107B19708CAB0003A32E /* ExistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48107A19708CAB0003A32E /* ExistTests.m */; };
+		843C22831A26AFA100D8187D /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C22821A26AFA100D8187D /* WKWebViewController.m */; };
+		843C22851A26B07400D8187D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C22841A26B07400D8187D /* WebKit.framework */; };
+		843C22871A26B0D000D8187D /* WKWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C22861A26B0D000D8187D /* WKWebViewTests.m */; };
+		843C22881A26B31000D8187D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C22841A26B07400D8187D /* WebKit.framework */; };
+		843C228A1A26B3AB00D8187D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C22841A26B07400D8187D /* WebKit.framework */; };
+		8479D6711A26C1F000440298 /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8479D6701A26C1F000440298 /* UIAutomation.framework */; };
+		8479D6721A26C22E00440298 /* UIAutomation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8479D6701A26C1F000440298 /* UIAutomation.framework */; };
 		A88930121685098E00FC7C63 /* KIF.h in Headers */ = {isa = PBXBuildFile; fileRef = A88930111685098E00FC7C63 /* KIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE62FCD01A1D20E5002B10DA /* UIWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE62FCCF1A1D20E5002B10DA /* UIWebViewTests.m */; };
 		AE62FCD61A1D2447002B10DA /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE62FCD51A1D2447002B10DA /* UIWebViewController.m */; };
@@ -198,6 +205,68 @@
 		2EE1270F198991920031D347 /* MultiFingerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiFingerTests.m; sourceTree = "<group>"; };
 		39160B1013D1E6BB00311E38 /* LoadableCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadableCategory.h; sourceTree = "<group>"; };
 		4A48107A19708CAB0003A32E /* ExistTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistTests.m; sourceTree = "<group>"; };
+		843C22821A26AFA100D8187D /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		843C22841A26B07400D8187D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		843C22861A26B0D000D8187D /* WKWebViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewTests.m; sourceTree = "<group>"; };
+		8479D6361A26C16600440298 /* CDStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDStructures.h; path = "UIAutomation Headers/CDStructures.h"; sourceTree = SOURCE_ROOT; };
+		8479D6371A26C16600440298 /* NSArray-UIAExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSArray-UIAExtras.h"; path = "UIAutomation Headers/NSArray-UIAExtras.h"; sourceTree = SOURCE_ROOT; };
+		8479D6381A26C16600440298 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSCopying-Protocol.h"; path = "UIAutomation Headers/NSCopying-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		8479D6391A26C16600440298 /* NSFastEnumeration-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSFastEnumeration-Protocol.h"; path = "UIAutomation Headers/NSFastEnumeration-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		8479D63A1A26C16600440298 /* NSValue-UIAutomation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSValue-UIAutomation.h"; path = "UIAutomation Headers/NSValue-UIAutomation.h"; sourceTree = SOURCE_ROOT; };
+		8479D63B1A26C16600440298 /* UIAActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAActionSheet.h; path = "UIAutomation Headers/UIAActionSheet.h"; sourceTree = SOURCE_ROOT; };
+		8479D63C1A26C16600440298 /* UIAActivityIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAActivityIndicator.h; path = "UIAutomation Headers/UIAActivityIndicator.h"; sourceTree = SOURCE_ROOT; };
+		8479D63D1A26C16600440298 /* UIAActivityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAActivityView.h; path = "UIAutomation Headers/UIAActivityView.h"; sourceTree = SOURCE_ROOT; };
+		8479D63E1A26C16600440298 /* UIAAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAAlert.h; path = "UIAutomation Headers/UIAAlert.h"; sourceTree = SOURCE_ROOT; };
+		8479D63F1A26C16600440298 /* UIAApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAApplication.h; path = "UIAutomation Headers/UIAApplication.h"; sourceTree = SOURCE_ROOT; };
+		8479D6401A26C16600440298 /* UIAButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAButton.h; path = "UIAutomation Headers/UIAButton.h"; sourceTree = SOURCE_ROOT; };
+		8479D6411A26C16600440298 /* UIACollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIACollectionCell.h; path = "UIAutomation Headers/UIACollectionCell.h"; sourceTree = SOURCE_ROOT; };
+		8479D6421A26C16600440298 /* UIACollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIACollectionView.h; path = "UIAutomation Headers/UIACollectionView.h"; sourceTree = SOURCE_ROOT; };
+		8479D6431A26C16600440298 /* UIAEditingMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAEditingMenu.h; path = "UIAutomation Headers/UIAEditingMenu.h"; sourceTree = SOURCE_ROOT; };
+		8479D6441A26C16600440298 /* UIAElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAElement.h; path = "UIAutomation Headers/UIAElement.h"; sourceTree = SOURCE_ROOT; };
+		8479D6451A26C16600440298 /* UIAElementArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAElementArray.h; path = "UIAutomation Headers/UIAElementArray.h"; sourceTree = SOURCE_ROOT; };
+		8479D6461A26C16600440298 /* UIAElementNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAElementNil.h; path = "UIAutomation Headers/UIAElementNil.h"; sourceTree = SOURCE_ROOT; };
+		8479D6471A26C16600440298 /* UIAElementSynonym.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAElementSynonym.h; path = "UIAutomation Headers/UIAElementSynonym.h"; sourceTree = SOURCE_ROOT; };
+		8479D6481A26C16600440298 /* UIAHost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAHost.h; path = "UIAutomation Headers/UIAHost.h"; sourceTree = SOURCE_ROOT; };
+		8479D6491A26C16600440298 /* UIAImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAImage.h; path = "UIAutomation Headers/UIAImage.h"; sourceTree = SOURCE_ROOT; };
+		8479D64A1A26C16600440298 /* UIAKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAKey.h; path = "UIAutomation Headers/UIAKey.h"; sourceTree = SOURCE_ROOT; };
+		8479D64B1A26C16600440298 /* UIAKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAKeyboard.h; path = "UIAutomation Headers/UIAKeyboard.h"; sourceTree = SOURCE_ROOT; };
+		8479D64C1A26C16600440298 /* UIALink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIALink.h; path = "UIAutomation Headers/UIALink.h"; sourceTree = SOURCE_ROOT; };
+		8479D64D1A26C16600440298 /* UIALocalizedValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIALocalizedValue.h; path = "UIAutomation Headers/UIALocalizedValue.h"; sourceTree = SOURCE_ROOT; };
+		8479D64E1A26C16600440298 /* UIAMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAMapView.h; path = "UIAutomation Headers/UIAMapView.h"; sourceTree = SOURCE_ROOT; };
+		8479D64F1A26C16600440298 /* UIANavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIANavigationBar.h; path = "UIAutomation Headers/UIANavigationBar.h"; sourceTree = SOURCE_ROOT; };
+		8479D6501A26C16600440298 /* UIAPageIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAPageIndicator.h; path = "UIAutomation Headers/UIAPageIndicator.h"; sourceTree = SOURCE_ROOT; };
+		8479D6511A26C16600440298 /* UIAPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAPicker.h; path = "UIAutomation Headers/UIAPicker.h"; sourceTree = SOURCE_ROOT; };
+		8479D6521A26C16600440298 /* UIAPickerWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAPickerWheel.h; path = "UIAutomation Headers/UIAPickerWheel.h"; sourceTree = SOURCE_ROOT; };
+		8479D6531A26C16600440298 /* UIAPopover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAPopover.h; path = "UIAutomation Headers/UIAPopover.h"; sourceTree = SOURCE_ROOT; };
+		8479D6541A26C16600440298 /* UIAProgressIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAProgressIndicator.h; path = "UIAutomation Headers/UIAProgressIndicator.h"; sourceTree = SOURCE_ROOT; };
+		8479D6551A26C16600440298 /* UIARecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIARecorder.h; path = "UIAutomation Headers/UIARecorder.h"; sourceTree = SOURCE_ROOT; };
+		8479D6561A26C16600440298 /* UIARecorderAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIARecorderAction.h; path = "UIAutomation Headers/UIARecorderAction.h"; sourceTree = SOURCE_ROOT; };
+		8479D6571A26C16600440298 /* UIARemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIARemote.h; path = "UIAutomation Headers/UIARemote.h"; sourceTree = SOURCE_ROOT; };
+		8479D6581A26C16600440298 /* UIAScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAScreen.h; path = "UIAutomation Headers/UIAScreen.h"; sourceTree = SOURCE_ROOT; };
+		8479D6591A26C16600440298 /* UIAScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAScrollView.h; path = "UIAutomation Headers/UIAScrollView.h"; sourceTree = SOURCE_ROOT; };
+		8479D65A1A26C16600440298 /* UIASearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASearchBar.h; path = "UIAutomation Headers/UIASearchBar.h"; sourceTree = SOURCE_ROOT; };
+		8479D65B1A26C16600440298 /* UIASecureTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASecureTextField.h; path = "UIAutomation Headers/UIASecureTextField.h"; sourceTree = SOURCE_ROOT; };
+		8479D65C1A26C16600440298 /* UIASegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASegmentedControl.h; path = "UIAutomation Headers/UIASegmentedControl.h"; sourceTree = SOURCE_ROOT; };
+		8479D65D1A26C16600440298 /* UIASlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASlider.h; path = "UIAutomation Headers/UIASlider.h"; sourceTree = SOURCE_ROOT; };
+		8479D65E1A26C16600440298 /* UIAStaticText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAStaticText.h; path = "UIAutomation Headers/UIAStaticText.h"; sourceTree = SOURCE_ROOT; };
+		8479D65F1A26C16600440298 /* UIAStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAStatusBar.h; path = "UIAutomation Headers/UIAStatusBar.h"; sourceTree = SOURCE_ROOT; };
+		8479D6601A26C16600440298 /* UIASwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASwitch.h; path = "UIAutomation Headers/UIASwitch.h"; sourceTree = SOURCE_ROOT; };
+		8479D6611A26C16600440298 /* UIASyntheticEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASyntheticEvents.h; path = "UIAutomation Headers/UIASyntheticEvents.h"; sourceTree = SOURCE_ROOT; };
+		8479D6621A26C16600440298 /* UIASyntheticStarkEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIASyntheticStarkEvents.h; path = "UIAutomation Headers/UIASyntheticStarkEvents.h"; sourceTree = SOURCE_ROOT; };
+		8479D6631A26C16600440298 /* UIATabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATabBar.h; path = "UIAutomation Headers/UIATabBar.h"; sourceTree = SOURCE_ROOT; };
+		8479D6641A26C16600440298 /* UIATableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATableCell.h; path = "UIAutomation Headers/UIATableCell.h"; sourceTree = SOURCE_ROOT; };
+		8479D6651A26C16600440298 /* UIATableGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATableGroup.h; path = "UIAutomation Headers/UIATableGroup.h"; sourceTree = SOURCE_ROOT; };
+		8479D6661A26C16600440298 /* UIATableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATableView.h; path = "UIAutomation Headers/UIATableView.h"; sourceTree = SOURCE_ROOT; };
+		8479D6671A26C16600440298 /* UIATarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATarget.h; path = "UIAutomation Headers/UIATarget.h"; sourceTree = SOURCE_ROOT; };
+		8479D6681A26C16600440298 /* UIATextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATextField.h; path = "UIAutomation Headers/UIATextField.h"; sourceTree = SOURCE_ROOT; };
+		8479D6691A26C16600440298 /* UIATextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIATextView.h; path = "UIAutomation Headers/UIATextView.h"; sourceTree = SOURCE_ROOT; };
+		8479D66A1A26C16600440298 /* UIAToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAToolbar.h; path = "UIAutomation Headers/UIAToolbar.h"; sourceTree = SOURCE_ROOT; };
+		8479D66B1A26C16600440298 /* UIAutomation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAutomation.h; path = "UIAutomation Headers/UIAutomation.h"; sourceTree = SOURCE_ROOT; };
+		8479D66C1A26C16600440298 /* UIAWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAWebView.h; path = "UIAutomation Headers/UIAWebView.h"; sourceTree = SOURCE_ROOT; };
+		8479D66D1A26C16600440298 /* UIAWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAWindow.h; path = "UIAutomation Headers/UIAWindow.h"; sourceTree = SOURCE_ROOT; };
+		8479D66E1A26C16600440298 /* UIAXElement-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIAXElement-Protocol.h"; path = "UIAutomation Headers/UIAXElement-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		8479D66F1A26C16600440298 /* UIAXElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIAXElement.h; path = "UIAutomation Headers/UIAXElement.h"; sourceTree = SOURCE_ROOT; };
+		8479D6701A26C1F000440298 /* UIAutomation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIAutomation.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks/UIAutomation.framework; sourceTree = DEVELOPER_DIR; };
 		A88930111685098E00FC7C63 /* KIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KIF.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AAB0726B139719AC008AF393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAB0728113971A63008AF393 /* KIF-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KIF-Prefix.pch"; path = "Classes/KIF-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -308,6 +377,8 @@
 				EABD46D21857A24E00A5F081 /* XCTest.framework in Frameworks */,
 				EABD468E1857A0C700A5F081 /* Foundation.framework in Frameworks */,
 				EABD468F1857A0C700A5F081 /* UIKit.framework in Frameworks */,
+				843C22881A26B31000D8187D /* WebKit.framework in Frameworks */,
+				8479D6711A26C1F000440298 /* UIAutomation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +391,8 @@
 				EABD46C31857A0F300A5F081 /* UIKit.framework in Frameworks */,
 				EABD46C41857A0F300A5F081 /* Foundation.framework in Frameworks */,
 				EABD46C51857A0F300A5F081 /* CoreGraphics.framework in Frameworks */,
+				843C228A1A26B3AB00D8187D /* WebKit.framework in Frameworks */,
+				8479D6721A26C22E00440298 /* UIAutomation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +403,7 @@
 				EB60ECC2177F8C83005A041A /* UIKit.framework in Frameworks */,
 				EB60ECC3177F8C83005A041A /* Foundation.framework in Frameworks */,
 				EB60ECC5177F8C83005A041A /* CoreGraphics.framework in Frameworks */,
+				843C22851A26B07400D8187D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +432,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8479D6351A26C11A00440298 /* UIAutomation Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8479D66B1A26C16600440298 /* UIAutomation.h */,
+				8479D6361A26C16600440298 /* CDStructures.h */,
+				8479D6371A26C16600440298 /* NSArray-UIAExtras.h */,
+				8479D6381A26C16600440298 /* NSCopying-Protocol.h */,
+				8479D6391A26C16600440298 /* NSFastEnumeration-Protocol.h */,
+				8479D63A1A26C16600440298 /* NSValue-UIAutomation.h */,
+				8479D63B1A26C16600440298 /* UIAActionSheet.h */,
+				8479D63C1A26C16600440298 /* UIAActivityIndicator.h */,
+				8479D63D1A26C16600440298 /* UIAActivityView.h */,
+				8479D63E1A26C16600440298 /* UIAAlert.h */,
+				8479D63F1A26C16600440298 /* UIAApplication.h */,
+				8479D6401A26C16600440298 /* UIAButton.h */,
+				8479D6411A26C16600440298 /* UIACollectionCell.h */,
+				8479D6421A26C16600440298 /* UIACollectionView.h */,
+				8479D6431A26C16600440298 /* UIAEditingMenu.h */,
+				8479D6441A26C16600440298 /* UIAElement.h */,
+				8479D6451A26C16600440298 /* UIAElementArray.h */,
+				8479D6461A26C16600440298 /* UIAElementNil.h */,
+				8479D6471A26C16600440298 /* UIAElementSynonym.h */,
+				8479D6481A26C16600440298 /* UIAHost.h */,
+				8479D6491A26C16600440298 /* UIAImage.h */,
+				8479D64A1A26C16600440298 /* UIAKey.h */,
+				8479D64B1A26C16600440298 /* UIAKeyboard.h */,
+				8479D64C1A26C16600440298 /* UIALink.h */,
+				8479D64D1A26C16600440298 /* UIALocalizedValue.h */,
+				8479D64E1A26C16600440298 /* UIAMapView.h */,
+				8479D64F1A26C16600440298 /* UIANavigationBar.h */,
+				8479D6501A26C16600440298 /* UIAPageIndicator.h */,
+				8479D6511A26C16600440298 /* UIAPicker.h */,
+				8479D6521A26C16600440298 /* UIAPickerWheel.h */,
+				8479D6531A26C16600440298 /* UIAPopover.h */,
+				8479D6541A26C16600440298 /* UIAProgressIndicator.h */,
+				8479D6551A26C16600440298 /* UIARecorder.h */,
+				8479D6561A26C16600440298 /* UIARecorderAction.h */,
+				8479D6571A26C16600440298 /* UIARemote.h */,
+				8479D6581A26C16600440298 /* UIAScreen.h */,
+				8479D6591A26C16600440298 /* UIAScrollView.h */,
+				8479D65A1A26C16600440298 /* UIASearchBar.h */,
+				8479D65B1A26C16600440298 /* UIASecureTextField.h */,
+				8479D65C1A26C16600440298 /* UIASegmentedControl.h */,
+				8479D65D1A26C16600440298 /* UIASlider.h */,
+				8479D65E1A26C16600440298 /* UIAStaticText.h */,
+				8479D65F1A26C16600440298 /* UIAStatusBar.h */,
+				8479D6601A26C16600440298 /* UIASwitch.h */,
+				8479D6611A26C16600440298 /* UIASyntheticEvents.h */,
+				8479D6621A26C16600440298 /* UIASyntheticStarkEvents.h */,
+				8479D6631A26C16600440298 /* UIATabBar.h */,
+				8479D6641A26C16600440298 /* UIATableCell.h */,
+				8479D6651A26C16600440298 /* UIATableGroup.h */,
+				8479D6661A26C16600440298 /* UIATableView.h */,
+				8479D6671A26C16600440298 /* UIATarget.h */,
+				8479D6681A26C16600440298 /* UIATextField.h */,
+				8479D6691A26C16600440298 /* UIATextView.h */,
+				8479D66A1A26C16600440298 /* UIAToolbar.h */,
+				8479D66C1A26C16600440298 /* UIAWebView.h */,
+				8479D66D1A26C16600440298 /* UIAWindow.h */,
+				8479D66E1A26C16600440298 /* UIAXElement-Protocol.h */,
+				8479D66F1A26C16600440298 /* UIAXElement.h */,
+			);
+			path = "UIAutomation Headers";
+			sourceTree = "<group>";
+		};
 		AAB0725D139719AC008AF393 = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +523,8 @@
 		AAB0726A139719AC008AF393 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8479D6701A26C1F000440298 /* UIAutomation.framework */,
+				843C22841A26B07400D8187D /* WebKit.framework */,
 				EABD46AB1857A0EB00A5F081 /* XCTest.framework */,
 				EB4C3138167BA3D200E31109 /* SenTestingKit.framework */,
 				AAB072B413971AEA008AF393 /* UIKit.framework */,
@@ -396,6 +537,7 @@
 		AAB0726E139719AC008AF393 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8479D6351A26C11A00440298 /* UIAutomation Headers */,
 				AAB0728113971A63008AF393 /* KIF-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -504,6 +646,7 @@
 				D9EA274218F05A6700D87E57 /* ScrollViewController.m */,
 				D927B9DB18F9DF2D00DAD036 /* TableViewController.m */,
 				AE62FCD51A1D2447002B10DA /* UIWebViewController.m */,
+				843C22821A26AFA100D8187D /* WKWebViewController.m */,
 				EB60ECC7177F8C83005A041A /* Supporting Files */,
 			);
 			path = "Test Host";
@@ -550,6 +693,7 @@
 				2EE1270F198991920031D347 /* MultiFingerTests.m */,
 				EB1A44D91A0C33AD004A3F61 /* AccessibilityIdentifierTests.m */,
 				AE62FCCF1A1D20E5002B10DA /* UIWebViewTests.m */,
+				843C22861A26B0D000D8187D /* WKWebViewTests.m */,
 				EB60ECF0177F8DB3005A041A /* Supporting Files */,
 			);
 			path = "KIF Tests";
@@ -744,7 +888,7 @@
 		AAB0725F139719AC008AF393 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastTestingUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = AAB07262139719AC008AF393 /* Build configuration list for PBXProject "KIF" */;
@@ -882,6 +1026,7 @@
 				EABD46BC1857A0F300A5F081 /* WaitForViewTests.m in Sources */,
 				EABD46BD1857A0F300A5F081 /* LandscapeTests.m in Sources */,
 				EABD46BE1857A0F300A5F081 /* TableViewTests.m in Sources */,
+				843C22871A26B0D000D8187D /* WKWebViewTests.m in Sources */,
 				EABD46BF1857A0F300A5F081 /* GestureTests.m in Sources */,
 				2EE12710198991920031D347 /* MultiFingerTests.m in Sources */,
 				D9EA274118F05A6000D87E57 /* ScrollViewTests.m in Sources */,
@@ -904,6 +1049,7 @@
 				2CDEE1CB181DBED200DF6E63 /* PickerController.m in Sources */,
 				EB60ED03177F9032005A041A /* TestSuiteViewController.m in Sources */,
 				D9EA274318F05A6700D87E57 /* ScrollViewController.m in Sources */,
+				843C22831A26AFA100D8187D /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1103,6 +1249,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks",
 				);
 				GCC_PREFIX_HEADER = "Classes/KIF-XCTestPrefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1123,6 +1270,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks",
 				);
 				GCC_PREFIX_HEADER = "Classes/KIF-XCTestPrefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1143,6 +1291,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks",
 				);
 				GCC_PREFIX_HEADER = "Classes/KIF-XCTestPrefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -1167,6 +1316,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1203,6 +1353,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1240,6 +1391,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/Developer/Library/PrivateFrameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KIF Tests/KIF XCTests-Prefix.pch";
