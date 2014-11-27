@@ -10,14 +10,14 @@
 #import <KIF/KIFUITestActor-IdentifierTests.h>
 #import <KIF/KIFTestStepValidation.h>
 
-@interface WebViewTests : KIFTestCase
+@interface UIWebViewTests : KIFTestCase
 @end
 
-@implementation WebViewTests
+@implementation UIWebViewTests
 
 - (void)beforeEach
 {
-    [tester tapViewWithAccessibilityLabel:@"WebViews"];
+    [tester tapViewWithAccessibilityLabel:@"UIWebViews"];
 }
 
 - (void)afterEach

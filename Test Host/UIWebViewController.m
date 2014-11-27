@@ -6,11 +6,11 @@
 //
 //
 
-@interface WebViewController : UIViewController
+@interface UIWebViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
-@implementation WebViewController
+@implementation UIWebViewController
 
 - (void)viewDidLoad
 {

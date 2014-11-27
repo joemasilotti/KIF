@@ -192,8 +192,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WebViews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="deS-Fk-bUP">
-                                                    <rect key="frame" x="12" y="11" width="106" height="24"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIWebViews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="deS-Fk-bUP">
+                                                    <rect key="frame" x="12" y="11" width="116" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1537,7 +1537,7 @@ Line Break
         <!--Web View Controller-->
         <scene sceneID="fyd-4C-gWx">
             <objects>
-                <viewController id="8mH-Tl-wLm" customClass="WebViewController" sceneMemberID="viewController">
+                <viewController id="8mH-Tl-wLm" customClass="UIWebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CPX-Mm-XlC">
                         <rect key="frame" x="0.0" y="20" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
