@@ -42,7 +42,7 @@
 - (void)testPickingAPhoto {
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1) {
         [tester tapViewWithAccessibilityLabel:@"Photos"];
-        [tester choosePhotoInAlbum:@"Camera Roll" atRow:1 column:2];
+        [tester choosePhotoInAlbum:@"Moments" atRow:2 column:2];
         [tester waitForViewWithAccessibilityLabel:@"{834, 1250}"];
     }
 }
