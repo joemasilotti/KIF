@@ -7,6 +7,7 @@
 //
 
 #import "KIFSystemAlertHandler.h"
+#import "KIFTestActor.h"
 #include <dlfcn.h>
 
 @interface UIAElement : NSObject <NSCopying>
@@ -36,24 +37,35 @@
     Class Target = NSClassFromString(@"UIATarget");
     Class NilElement = NSClassFromString(@"UIAElementNil");
 
+    NSTimeInterval time = 0, tick = 0.1f;
+
     // Keep trying until the accessibility server starts up (it takes a little while on iOS 7)
     UIAApplication *app = nil;
     while (!app) {
         @try {
-            [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1f]];
-
             UIATarget *target = [Target localTarget];
             app = target.frontMostApp;
-            UIAAlert *alert = app.alert;
-            [[alert.buttons lastObject] tap];
         }
         @catch (NSException *exception) { }
-        @finally { }
+        @finally {
+            if (time >= [KIFTestActor defaultTimeout]) {
+//- (void)failWithError:(NSError *)error stopTest:(BOOL)stopTest
+            }
+            NSAssert(time < [KIFTestActor defaultTimeout], @"Timed out waiting for accessibility server to start");
+        }
     }
 
+    UIAAlert *alert = app.alert;
+    NSAssert(![alert isKindOfClass:NilElement], @"Could not find alert");
+    [[alert.buttons lastObject] tap];
+
     // Run until the alert is dismissed
+    time = 0;
     while (![app.alert isKindOfClass:NilElement]) {
-        [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1f]];
+        [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:tick]];
+        time += tick;
+
+        NSAssert(time < [KIFTestActor defaultTimeout], @"Timed out waiting for alert to be dismissed");
     }
 }
 
