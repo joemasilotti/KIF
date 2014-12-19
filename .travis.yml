@@ -1,4 +1,9 @@
 language: objective-c
 
+env:
+  matrix:
+    - DESTINATION="platform=iOS Simulator,name=iPhone Retina (4-inch),OS=7.1"
+    - DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=8.1"
+
 script:
-- xcodebuild -scheme KIF -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch),OS=7.1' test
+  - xcodebuild -scheme KIF -destination "$DESTINATION" test
